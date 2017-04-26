@@ -1,2 +1,2 @@
 # earlgreydummy
-WIP forever (Dummy test project)
+Forever a WIP (Dummy test project)
