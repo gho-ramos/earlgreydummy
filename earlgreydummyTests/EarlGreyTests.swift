@@ -1,25 +1,26 @@
 //
-//  FirstEarlGreyTest.swift
+//  EarlGreyTests.swift
 //  earlgreydummy
 //
-//  Created by Guilherme Ramos on 24/04/17.
+//  Created by Guilherme on 4/26/17.
 //  Copyright © 2017 Progeekt. All rights reserved.
 //
 
 import XCTest
 import EarlGrey
-class FirstEarlGreyTest: XCTestCase {
+
+class EarlGreyTests: XCTestCase {
     
-    func testExample() {
+    func testScreen() {
         EarlGrey.select(elementWithMatcher: grey_keyWindow()).assert(grey_sufficientlyVisible())
     }
     
-    func testAlertButtonClick() {
+    func testButtonClick() {
         EarlGrey.select(elementWithMatcher: grey_accessibilityID("AlertButton")).perform(grey_tap())
         EarlGrey.select(elementWithMatcher: grey_accessibilityID("AlertLabel")).assert(grey_text("Alert"))
     }
     
-    func testAlertLabelContent() {
-        EarlGrey.select(elementWithMatcher: grey_accessibilityID("AlertLabel")).assert(grey_text("Label"))
+    func testVisibleLabel() {
+        EarlGrey.select(elementWithMatcher: grey_accessibilityID("AlertLabel")).assert(grey_sufficientlyVisible());
     }
 }
