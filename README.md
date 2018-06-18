@@ -1,5 +1,5 @@
 # earlgreydummy
-Forever a WIP (Dummy test project)
+Study Test Project
 
 - UI Test Framework:
 https://github.com/google/EarlGrey
